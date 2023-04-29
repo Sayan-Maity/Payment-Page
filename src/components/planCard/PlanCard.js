@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsFillCheckCircleFill } from 'react-icons/bs';
 import { BiRupee } from 'react-icons/bi';
-import { IoMdRadioButtonOn } from 'react-icons/io';
+import { IoMdRadioButtonOn, IoMdRadioButtonOff } from 'react-icons/io';
 import './PlanCard.css'
 const PlanCard = ({planData}) => {
     console.log(planData)
@@ -9,12 +9,18 @@ const PlanCard = ({planData}) => {
     <div>
         <div className="planCardOuter">
             <div className="status">
-                <p>{planData.status}</p>
+            {planData.currentPlan === planData.total ? (<><p>{planData.status}</p></>) : (<></>)}
+                
             </div>
             <div className="middle">
                 <div className="left">
                     <div className="check">
-                        {planData.currentPlan === planData.total ? (<><BsFillCheckCircleFill className='checkIcon'/></>) : (<><IoMdRadioButtonOn className='disableIcon'/></>)}
+                        {/* {planData.currentPlan === planData.total ? (<><BsFillCheckCircleFill className='checkIcon'/></>) : (<><IoMdRadioButtonOn className='disableIcon'/></>)} */}
+
+                        {planData.disable === 0 ? (planData.currentPlan === planData.total ? (<><BsFillCheckCircleFill className='checkIcon'/></>) : (<><IoMdRadioButtonOff  className='disableIcon'/></>)) : (<><IoMdRadioButtonOn className='disableIcon'/></>)}
+
+
+
                         
                     </div>
                     <div className="desc">

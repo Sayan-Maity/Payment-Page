@@ -41,16 +41,16 @@ const PaymentCard = () => {
           </div>
           <div className="planCards">
             <div className="x" >
-              <PlanCard planData={{status: "Offer expired", total: 89, perMonth: 8, subscriptionTime: 12}}/>
+              <PlanCard planData={{status: "Offer expired", total: 89, perMonth: 8, subscriptionTime: 12, disable: 1}}/>
             </div>
             <div className="x" onClick={() => setCurrentPlan(179)} id={currentPlan === 179? 'borderedPlan' : ''}>
-              <PlanCard planData={{status: "Recommended", total: 179, perMonth: 15, subscriptionTime: 12, currentPlan}}/>
+              <PlanCard planData={{status: "Recommended", total: 179, perMonth: 15, subscriptionTime: 12, disable: 0, currentPlan}}/>
             </div>
             <div className="x" onClick={() => setCurrentPlan(149)} id={currentPlan === 149? 'borderedPlan' : ''}>
-              <PlanCard planData={{status: "Deluxe Pack", total: 149, perMonth: 25, subscriptionTime: 6, currentPlan}}/>
+              <PlanCard planData={{status: "Deluxe Pack", total: 149, perMonth: 25, subscriptionTime: 6, disable: 0, currentPlan}}/>
             </div>
             <div className="x" onClick={() => setCurrentPlan(99)} id={currentPlan === 99? 'borderedPlan' : ''}>
-              <PlanCard planData={{status: "Golden Pack", total: 99, perMonth: 33, subscriptionTime: 3, currentPlan}}/>
+              <PlanCard planData={{status: "Golden Pack", total: 99, perMonth: 33, subscriptionTime: 3, disable: 0, currentPlan}}/>
             </div>
           </div>
 

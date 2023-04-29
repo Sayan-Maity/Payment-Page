@@ -70,11 +70,11 @@
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    color: #333;
+    color: #3c4852;
 }
 
 .planCardOuter .status {
-    background-color: rgb(188, 188, 188);
+    background-color: #47ba68;
     width: fit-content;
     padding: 0rem 2rem;
     border-bottom-left-radius: 5px;
@@ -83,6 +83,7 @@
     align-items: center;
     font-size: 0.7rem;
     margin-left: 2.5rem;
+    color: #fff;
 }
 .x {
     border: 2px solid #bebebe !important;
@@ -90,11 +91,8 @@
 .x:nth-child(1) {
     background-color: #e7e7e7;
     /* color: #bebebe; */
+    pointer-events: none;
     
-    
-}
-.x:nth-child(1):hover {
-    cursor: none;
 }
 
 #borderedPlan {
