@@ -9,6 +9,13 @@
 .descBody .secondHeading .boldPrice {
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+.descBody .secondHeading .boldPrice .strike {
+    background-color: red;
+    height: 0.3rem;
+    width: 6.5rem;
+    transform: translateY(-1.2rem);
 }
 .descBody .secondHeading .boldPrice h1 {
     margin-right: 0.5rem;
