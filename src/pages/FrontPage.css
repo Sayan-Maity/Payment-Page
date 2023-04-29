@@ -1,0 +1,17 @@
+.mainBodyOuter {
+    width: 100%;
+}
+.mainBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: auto; */
+    padding: 3rem 4rem;
+}
+body {
+    background-image: linear-gradient(to right, #060f16, #2b3346);
+}
+.mainBody .left {
+    color: #fff;
+
+}

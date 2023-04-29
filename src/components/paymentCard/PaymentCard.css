@@ -1,0 +1,161 @@
+.paymentCardOuter {
+    width: 25rem;
+    /* border: 1px solid #333; */
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    background-color: #fff;
+}
+
+.planCards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+.paymentHeader {
+    padding: 0 3rem;
+    text-align: center;
+}
+.paymentHeader h3 {
+    margin: 1rem 0;
+}
+
+.paymentHeader .signSubscribe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.paymentHeader .signSubscribe .subscribe,
+.paymentHeader .signSubscribe .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.paymentHeader .signSubscribe .subscribe p:nth-child(1),
+.paymentHeader .signSubscribe .signup p:nth-child(1){
+    background-color: #0096ff;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    font-weight: bold;
+    color: #fff;
+}
+.paymentHeader .signSubscribe .subscribe p:nth-child(2),
+.paymentHeader .signSubscribe .signup p:nth-child(2) {
+    font-size: 0.8rem;
+
+}
+
+.x {
+    border: 2px solid rgb(188, 188, 188);
+    padding: 0 1rem;
+    border-radius: 5px;
+}
+
+.planCalculation {
+    border-top: 1px solid #333;
+    margin: 1rem 0;
+}
+.planCalculation .initialTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+.planCalculation .initialTotal p:nth-child(2) {
+    font-weight: bold;
+}
+.planCalculation .initialTotal p:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.limitedOffer {
+    border-top: 2px solid #fec163;
+    border-left: 2px solid #fec163;
+    border-right: 2px solid #de4313;
+    border-bottom: 2px solid #de4313;
+
+        border-radius: 5px;
+    padding: 0.6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+}
+.limitedOffer .limitedOfferPrice {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between !important;
+}
+.limitedOffer .limitedOfferPrice p:nth-child(2) {
+    font-weight: bold;
+}
+.limitedOffer .limitedOfferPrice p:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+.limitedOffer .limitedOfferPrice p:nth-child(2) span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.limitedOffer .validityTime {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem ;
+    
+}
+.limitedOfferIcon {
+    height: 1rem;
+}
+.finalTotal {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.finalTotal p:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+.finalTotal p:nth-child(2),
+.finalTotal p:nth-child(1) span {
+    font-weight: bold;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.buttons .pay,
+.buttons .cancel {
+    width: 100%;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    
+}
+.buttons .pay {
+    background-color: #47ba68;
+    border: 2px solid transparent;
+    color: #fff;
+}
+.buttons .cancel {
+    border: 2px solid #ff0000;
+    color: #ff0000;
+}
+.razorpayLogo {
+    margin-top: 1.5rem;
+}
+.razorpayLogo img {
+    height: 2rem;
+}

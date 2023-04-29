@@ -1,0 +1,41 @@
+
+.descBody {
+    padding: 2rem;
+}
+.descBody .secondHeading {
+    display: flex;
+    align-items: center;
+}
+.descBody .secondHeading .boldPrice {
+    display: flex;
+    align-items: center;
+}
+.descBody .secondHeading .boldPrice h1 {
+    margin-right: 0.5rem;
+}
+.descBody .secondHeading h1.boldHeading span {
+    color: #0098f7;
+}
+.descBody ul {
+    margin-top: 2rem;
+}
+.descBody ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+
+}
+.descBody ul li:nth-child(4) span {
+    display: flex;
+    align-items: center;
+}
+.descBody ul li span {
+    color: #0098f7;
+    margin-right: 0.5rem;
+}
+.descBody ul li img {
+    height: 50px;
+    margin-right: 1rem;
+}

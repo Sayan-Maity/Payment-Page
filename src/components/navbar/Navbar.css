@@ -1,0 +1,32 @@
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+.navbar .right,
+.navbar .left {
+    display: flex;
+    align-items: center;
+}
+.navbar .left .logo .logoImage {
+    height: 2rem;
+}
+.navbar .left {
+    gap: 3rem;
+}
+.navbar .left .menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.navbar .right .menuButton {
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+}
+.navbar .right .menuButton:nth-child(3) {
+    background-image: linear-gradient(to right,  #0096ff, #0048ff);
+    color: #fff;
+
+}
